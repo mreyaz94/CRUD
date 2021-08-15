@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%extends 'webapp/base.html'%}
+    {%block body_block%}
+
+      <div class="jumbotron">
+          <form method="post">
+              {%csrf_token%}
+               <h1>Are you sure want to delete...</h1><hr>
+                <ul>
+                    <li>Taste: {{beerdb.name|title}}</li>
+                    <li>Taste: {{beerdb.taste|title}}</li>
+                    <li>Color: {{beerdb.color|title}}</li>
+                    <li>Price: {{beerdb.price|title}}</li>
+                </ul>
+          <input type="submit" class="btn btn-lg btn-danger" value="Delete Record">
+          <a href="/" class="btn btn-lg btn-success" type="">Cancel</a>
+              </form>
+      </div>
+
+
+    {%endblock%}
+

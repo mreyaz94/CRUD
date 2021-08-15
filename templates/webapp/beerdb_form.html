@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{%extends 'webapp/base.html'%}
+    {%block body_block%}
+        <h1>Add/Update New Beer Here </h1><hr>
+
+        <form method="post">
+        {{form.as_p}}
+        {%csrf_token%}
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input type="submit" class="btn btn-lg btn-primary" value="Add/Update Beer">
+         </form>
+
+    {%endblock%}
+

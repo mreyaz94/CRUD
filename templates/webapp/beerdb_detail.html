@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{%extends 'webapp/base.html'%}
+    {%block body_block%}
+
+           <div class="jumbotron">
+               <h1>Beer Details...</h1><hr>
+                <ul>
+                    <li>Taste: {{beerdb.name|title}}</li>
+                    <li>Taste: {{beerdb.taste|title}}</li>
+                    <li>Color: {{beerdb.color|title}}</li>
+                    <li>Price: {{beerdb.price|title}}</li>
+                </ul>
+           </div>
+
+
+    {%endblock%}
